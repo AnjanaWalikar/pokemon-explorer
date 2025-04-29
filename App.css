@@ -1,0 +1,90 @@
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #f4f4f4;
+}
+
+
+.header {
+  background-color: #ffcb05;
+  padding: 1rem;
+  text-align: center;
+  font-size: 2rem;
+  color: #3b4cca;
+  font-weight: bold;
+}
+
+
+.filters {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  margin: 20px;
+}
+
+.filters input,
+.filters select {
+  padding: 0.5rem;
+  font-size: 1rem;
+  border: 2px solid #ccc;
+  border-radius: 5px;
+}
+
+
+.pokemon-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  padding: 1rem;
+}
+
+
+.pokemon-card {
+  background-color: white;
+  border-radius: 10px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  width: 180px;
+  margin: 1rem;
+  padding: 1rem;
+  text-align: center;
+  transition: transform 0.2s ease-in-out;
+}
+
+.pokemon-card:hover {
+  transform: scale(1.05);
+}
+
+
+.pokemon-image {
+  width: 100%;
+  max-width: 150px;
+  height: auto;
+  margin-bottom: 10px;
+}
+
+
+.status {
+  text-align: center;
+  font-size: 1.2rem;
+  color: #333;
+  margin-top: 20px;
+}
+
+.status.error {
+  color: red;
+}
+
+
+@media (max-width: 768px) {
+  .pokemon-card {
+    width: 150px;
+  }
+
+  .filters {
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
